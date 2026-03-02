@@ -1,0 +1,252 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+    background-image: url('../thefeed/img/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Fira Code", monospace;
+    display: flex;
+    flex-wrap: wrap;        
+    justify-content:center;
+    gap: 20px; 
+}
+
+p a.back-button {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+}
+h1 {
+    font-family: "Fira Code", monospace;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    color: white;
+    position: absolute;
+    top: 87%;
+    left: 30%;
+}
+
+h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Paragraph text */
+p {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+}
+
+/* =========================
+   MEDIA (IMAGES + VIDEOS)
+========================= */
+
+/* All images */
+img {
+    object-fit: contain;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Images + videos (shared sizing) */
+video {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* =========================
+   LAYOUT ROWS
+========================= */
+.row1 {
+    display: flex;
+    flex-wrap: wrap;        
+    justify-content: center;
+    gap: 20px;  
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* =========================
+   MUSIC SECTION
+========================= */
+.music {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;        
+    justify-content: center;
+    gap: 20px; 
+}
+
+/* =========================
+   FLOWER POSITIONING
+========================= */
+#f1 { position: absolute; top: 5%; left: 5%; width: 400px; height: auto; }
+#f2 { position: absolute; top: 5%; right: 5%; width: 400px; height: auto; }
+#f3 { position: absolute; bottom: 5%; left: 5%; width: 400px; height: auto; }
+#f4 { position: absolute; bottom: 5%; right: 5%; width: 400px; height: auto; }
+#f5 { position: absolute; top: 5%; left: 5%; transform: translateY(-50%); width: 400px; height: auto; }
+#f6 { position: absolute; top: 5%; left: 5%; transform: translateX(-50%); width: 400px; height: auto; }
+#f7 { position: absolute; bottom: 5%; left: 5%; transform: translateX(-50%); width: 400px; height: auto; }
+#f8 { position: absolute; top: 5%; right: 5%; transform: translateY(-50%); width: 400px; height: auto; }
+#f9 { position: absolute; top: 5%; left: 5%; transform: translateY(-50%); width: 400px; height: auto; }
+
+/* =========================
+   ENTER GIF (INDEX PAGE)
+========================= */
+#enter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#enter img {
+    width: 700px;
+    height: auto;
+}
+
+/* =========================
+   ABOUT ME SECTION
+========================= */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 60px auto;
+    font-family: Arial, sans-serif;
+}
+
+.profile-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+/* =========================
+   WALLPAPER / LULU SECTION
+========================= */
+.thefeed {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+.feed-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.feed-text {
+    flex: 1;
+    line-height: 1.6;
+}
+
+/* =========================
+   NOTES & FEED SECTIONS (GRID LAYOUT)
+========================= */
+
+/* Generic flex container for feeds with text on right */
+.thefeed.notes-feed,
+.thefeed.instagram-motivation,
+.thefeed.design-feed {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+/* Gallery container for left-side images */
+.feed-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Rectangular images (phone screen proportions) */
+.feed-gallery img {
+    width: 220px;       /* phone screen width */
+    height: 400px;      /* phone screen height */
+    border-radius: 12px;
+    object-fit: cover;  /* fills container while keeping aspect */
+    display: block;
+}
+
+/* Text block on the right */
+.feed-text {
+    flex: 1;                /* takes remaining space */
+    line-height: 1.6;
+}
+
+/* Flush-left text for specific sections */
+.feed-text.flush-left {
+    text-align: left;
+}
+
+/* =========================
+   SPECIFIC SECTION CLASSES (optional) for clarity
+========================= */
+
+/* Instagram Motivation */
+.thefeed.instagram-motivation .feed-gallery img {
+    width: 220px;
+    height: 400px;
+}
+
+/* Design / Funny */
+.thefeed.design-feed .feed-gallery img {
+    width: 220px;
+    height: 400px;
+}
+
+/* Notes Section */
+.thefeed.notes-feed .feed-gallery img {
+    width: 220px;
+    height: 400px;
+}
+
+/* =========================
+   FRIENDS' SPOTIFY GRID 3x3
+========================= */
+.thefeed.notes-feed:last-of-type .feed-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    gap: 16px;
+    justify-items: center;
+}
+
+.thefeed.notes-feed:last-of-type .feed-gallery .music {
+    width: 220px;
+    height: 400px;
+    margin: 0;
+}
