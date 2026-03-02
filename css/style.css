@@ -29,8 +29,8 @@ h1 {
     font-optical-sizing: auto;
     color: white;
     position: absolute;
-    top: 77%;
-    left: 45%;
+    top: 76%;
+    left: 40%;
 }
 
 h1 a {
@@ -248,7 +248,7 @@ video {
     grid-auto-rows: 400px;
     gap: 16px;
     justify-items: center;
-    background-image: rgb(208, 95, 95);
+    background: rgb(208, 95, 95);
     border-radius: 15px;
     padding: 3%;
 }
