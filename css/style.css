@@ -1,8 +1,7 @@
 /* =========================
    GOOGLE FONT
 ========================= */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 /* =========================
    GLOBAL STYLES
 ========================= */
@@ -11,7 +10,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: "Fira Code", monospace;
+    font-family: "Questrial", sans-serif;
     display: flex;
     flex-wrap: wrap;        
     justify-content:center;
@@ -22,15 +21,27 @@ p a.back-button {
     color: white;
     font-size: 28px;
     text-decoration: none;
+    z-index: 1000;
+    position: fixed;
+    top: 9%;
+    left:7%;
 }
 h1 {
-    font-family: "Fira Code", monospace;
+    font-family: "Questrial", sans-serif;
     font-weight: 500;
     font-optical-sizing: auto;
     color: white;
     position: absolute;
     top: 73%;
     left: 40%;
+}
+
+.flowerback img {
+    width: 200px;
+    height: auto;
+    position:fixed;
+    top: 1%;
+    left: 2%;
 }
 
 h1 a {
@@ -40,7 +51,7 @@ h1 a {
 
 /* Paragraph text */
 p {
-    font-family: "Fira Code", monospace;
+    font-family: "Questrial", sans-serif;
     font-optical-sizing: auto;
 }
 
